@@ -1,0 +1,35 @@
+
+/*Con el selector ID, se establecen las posiciones como estáticas, que de por sí es el que se establece por defecto. Por lo tanto los elementos se mantienen en su posición original. Como el elemento div es un elemento de bloque, cad cuadrado aparecé uno debajo del otro, en el orden de la estructura del HTML. El ancho y el largo tienen el mismo tamaño porque son cuadrados*/
+
+/*Ejemplo B: al cambiar el valor de position a relative, no ocurre ningún cambio porque no se le ha indicado al elemento hacia donde se va desplazar.*/
+#box_1 { 
+
+    /*Cambiando el valor de position a relative
+    position: static;*/
+    position: relative;
+	width: 200px;
+	height: 200px;
+	background: #ee3e64;
+}
+
+#box_2 { 
+    /*Cambiando el valor de position a relative
+    position: static;*/
+    position: relative;
+
+    /*Ejemplo C: Añadiendo valores para mover el elemento. Ahora la caja se moverá 200px a la derecha. La caja 3 se mantiene en su lugar y no es alterado por la posición de la caja 2*/
+    left: 200px;
+	width: 200px;
+	height: 200px;
+	background: #44accf;
+}
+
+#box_3 { 
+    /*Cambiando el valor de position a relative
+    position: static;*/
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #b7d84b;
+}
+
